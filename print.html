@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Preview</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+</head>
+<body onload="generateBarcode()">
+    <div class="print">
+    <div class="main">
+        <div class="bg">
+            <img src="./asset/img/logo.jpg" alt="">
+            <div class="head">
+                <h1>Maulana Abul Kalam Azad University of Technology, West Bengal</h1>
+                <h2>(Formerly known as WBUT)</h2>
+            </div>
+        </div>
+            <div class="middle">
+                <div id="preview" alt=""></div>
+                <div class="details">
+                    <h1 id="regn"><script>document.getElementById("regn").innerHTML="ID No.: "+localStorage.getItem("reg")</script></h1> <!---reg no-->
+                    <h2 id="name1" style="text-transform: uppercase;"> <script>document.getElementById("name1").innerHTML=localStorage.getItem("name1")</script></h2> <!---name-->
+                    <h3 id="prog" style="text-transform: uppercase;"> <script>document.getElementById("prog").innerHTML=localStorage.getItem("prog")</script></h3>  <!---course-->
+                </div>
+            </div>    
+        <div class="barcode">
+            <img id="barcode"> <!---barcode-->
+        </div>
+        <div class="bottom">
+            <h2>MAIN CAMPUS:- NH 12 SIMHAT,HARINGHATA, NADIA, PIN - 741249 <br>
+            CITY OFFICE:- BF - 142, SECTOR I, SALT LAKE <br>
+            KOLKATA - 700064, PHONE:- 9133 29991528</h2>
+        </div>
+    </div>
+    <div class="main1">
+            <div class="head1">
+                <h1><u>IDENTITY CARD</u></h1>
+            </div>
+            <div class="details1">
+                <p class="a" id="address" style="text-transform: uppercase;"> <script>document.getElementById("address").innerHTML="ADDRESS.: "+localStorage.getItem("address")</script></p> <!---address-->
+                <p class="b" id="bgroup"> <script>document.getElementById("bgroup").innerHTML="BLOOD GROUP.: "+localStorage.getItem("bgroup")</script></p>  <!---blood group-->
+                <p class="c" id="eno"> <script>document.getElementById("eno").innerHTML="EMERGENCY NO.: "+localStorage.getItem("eno")</script></p>
+                <p class="d" id="valid"> <script>document.getElementById("valid").innerHTML="VALID TILL.: "+localStorage.getItem("valid")</script></p>
+            </div>  
+            <div class="sign">
+                <img id="signa" src="./asset/img/Signature.png" width="300" height="40" alt=""> <!---barcode-->
+                <p class="e">SIGNATURE OF THE ISSUING AUTHORITY</p>
+            </div>
+        <div class="bottom1">
+            <ul>
+                <li>This is a property of MAKAUT, WB. In case of loss the holder should immediately notify the Registrar and the nearest Police Station.</li>
+                <li>This card must be carried by the holder within the University Premises.</li>
+                <li>This card is to be used to access any facility that requires the use of the card.</li>
+                <li>This card is to be surrendered to the issuing authoriuty ,at the time of culmination of academic programme enrolled for transfer /resignation /retirement (as applicable) from the University.</li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+    <div id="printbutton">
+        <button id="print1" onclick="printContent()">Print ID Card</button>
+    </div>
+    <script src="assets\js\script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+    <script src="assets\js\scriptbarcode.js"></script>
+    <script src="assets/js/imageupload.js"></script>
+    <script>
+        var uploadedImage = localStorage.getItem('uploadedImage');
+        var imgElement = document.createElement('img');
+        imgElement.src = uploadedImage;
+        document.getElementById('preview').appendChild(imgElement);
+    </script>
+    <script>
+        function printContent() {
+        document.getElementById('print1').style = 'display:none';
+        print();
+        document.getElementById('print1').style = 'display:block';
+      }
+    </script>
+</body>
+</html>

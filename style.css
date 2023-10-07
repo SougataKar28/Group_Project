@@ -1,0 +1,153 @@
+.print{
+   margin: auto;
+   width: auto;  
+}
+
+
+.main{
+    border: 4px solid black;
+    height: 395px;
+    width: 700px;
+}
+
+
+.bg{
+   
+    background-color: rgb(14, 14, 161);  
+    display: flex;
+    height: 120px;
+    width: 700px;
+    border-bottom: 4px solid black;
+
+}
+.head h1{
+    color: white;
+    font-size: 25px;
+    display: flex;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+    
+}
+.head h2{
+    color: white;
+    font-size: 20px;
+    letter-spacing: 4px;
+    word-spacing: 7px;
+    line-height: 20px;
+    border-top: 1px solid white;
+}
+.bg img{
+    height: 100px;
+    width: 100px;
+    padding-top: 10px;
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+.middle{
+    display: flex;
+    margin:  0px 0px 0px 10px;
+    padding-top: 5px;
+}
+
+.middle img{
+    height: 110px;
+    width: 110px;
+    border: 3px solid black;
+}
+.details{
+    
+    padding-left: 50px;
+}
+.details h1{
+    font-size: 25px;
+    line-height: 0.3;
+    display: flex;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    
+}
+
+.details h2{
+    font-size: 25px;
+    line-height: 1.0;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+}
+
+.details h3{
+    font-size: 22px;
+    line-height: 0.2;
+    letter-spacing: 3px;
+    word-spacing: 7px;
+}
+
+.barcode {
+    
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+.bottom{
+    text-align: center;
+
+}
+.bottom h2{
+    margin-top: 0px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+.main1{
+    border: 4px solid black;
+    height: 395px;
+    width: 700px;
+    margin-top: 20px;
+}
+
+
+.head1 h1{
+    color: red;
+    text-align: center;
+    line-height: 0.1;
+}
+
+p{
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+.e{
+    text-align: end;
+    padding-right: 20px; 
+    margin-bottom: 0px;
+}
+
+.sign{
+    text-align: center;
+    margin-left: 320px;
+}
+
+
+.bottom1{
+    text-align: left;
+}
+
+
+.bottom1 ul{
+    border-top: 2px solid black;
+    margin-top: 0px;
+    font-weight: bold;
+    line-height: 1.1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.print1 {
+    color: blue;
+    padding:20px ;
+    bottom:500px;
+    left:500px;
+}

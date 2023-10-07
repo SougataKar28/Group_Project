@@ -1,0 +1,62 @@
+<!DOCTYPE html >
+<html lang="en" class="login1">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="assets\css\style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  
+  
+</head>
+<body>
+  <header>
+    <div>
+      <nav>
+        <a href="index.html" class="logo1"><img src="assets\img\logo1.png" ></a>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about us.html">ABOUT US</a></li>
+          <li><a href="login.html">SERVICES</a></li>
+          <li><a href="contactus.html">CONTACT US</a></li>
+          
+        </ul>
+        <a href="login.html" class="account"><img src="assets\img\user.png" ></a>
+      </nav>
+    </div>
+  </header>
+<div class="content2">
+  <div class="wrapper">
+    
+    <div class="form-box login">
+      <h1>Login</h1>
+      <form name="login" action="#" onsubmit="checkvalue()" method="post">
+        <div class="input-box">
+          <span class="icon"><i class="fa-solid fa-lock"></i></span>
+          <input id="reginfo" type="number" required>
+          <label>Enter Registration Number</label>
+        </div>
+        
+        <button type="submit" class="btn5"  >Login</button>
+      </form>
+    </div>
+  </div>
+</div>
+	
+  </div>
+  <script type="text/javascript">
+    function preventBack() {
+        window.history.forward(); 
+        
+    }
+      
+    setTimeout("preventBack()", 0);
+      
+    window.onunload = function () { null };
+</script>
+  <script src="./assets/js/scriptcheck.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

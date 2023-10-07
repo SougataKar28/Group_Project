@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+	<head>
+		<title>ID Card Generator</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="assets\css\style.css">
+	</head>
+	<body class="form">
+	
+		<header >
+			<div class="navigation">
+					
+						<img src=".//assets/img/logo1.png" height="100px" width="80px">
+					
+						<h1 class="form-heading">REGISTRATION FORM</h1>
+						
+			</div>
+			<div>
+				<marquee behavior="" direction="left">
+					<h2 class="floating">
+						*Note:- Fill the form below with correct details. Incorrect submission of details will result in rejection of ID Card. 
+					</h2>
+				</marquee>
+			</div>
+			
+
+
+			<!-----Main Div Class----->
+			<div class="main">
+				<!----Container Div Class----->
+				<div class="container1">
+				
+					<!---Form Start--->
+					<form id="register" action="print.html" autocomplete="off" method="post">
+					
+				
+						<!---Email Address--->
+
+						<label for="email" class="form-input">Email:</label>
+						<input type="email"  id="email" name="email" placeholder="Enter Your E-Mail Address" required class="col-1">
+					
+						<br>
+
+						<!---Registration Number--->
+
+						<label for="regno" class="form-input" >Registration Number:</label>
+						<input type="number" minlength="15" maxlength="15" id="regno" name="Registration number" placeholder="Enter Your Registration number"  required class="col-1" >
+
+						<br>
+
+						<!---First Name--->
+
+
+						<label for="name" class="form-input">First Name:</label>
+						<input type="text"  id="fname" name="name" placeholder="Enter Your First Name" required class="col-1">
+
+						<br>
+
+						<!---Last Name--->
+
+
+						<label for="name" class="form-input">Last Name:</label>
+						<input type="text"  id="lname" name="name" placeholder="Enter Your Last Name" required class="col-1">
+
+						<br>
+
+						<!---Gender--->
+
+
+						<label for="gender" class="form-input">Gender:</label>
+						<input type="radio" id="radio" name="Gender" required class="col-1">&nbsp;Male	
+						<input type="radio" id="radio" name="Gender" required class="col-1">&nbsp;Female	
+						<input type="radio" id="radio" name="Gender" required class="col-1">&nbsp;Transgender 
+
+						<br>
+
+						<!---Date of Birth--->
+
+
+						<label for="dob" class="form-input">Date of Birth:</label>
+						<input type="date" id="dob" name="Date of Birth" required class="col-1">
+
+
+						<br>
+
+						<!---Blood Group--->
+
+
+						<label for="bgroup" class="form-input" >Blood Group:</label>
+						<select name="Blood Group" id="bgroup" required class="select-option">
+							<option value="Not Selected">Select an option</option>
+							<option value="A+">A+</option>
+							<option value="A-">A-</option>
+							<option value="B+">B+</option>
+							<option value="B-">B-</option>
+							<option value="O+">O+</option>
+							<option value="O-">O-</option>
+							<option value="AB+">AB+</option>
+							<option value="AB-">AB-</option>
+						</select>
+
+						<br>
+
+
+						<!---Aadhaar--->
+
+
+						<label for="aadhaar"class="form-input" >Aadhaar number:</label>
+						<input type="number" minlength="12" maxlength="12" id="aadhaar" name="aadhaar" placeholder="Enter Your Aadhaar Number" required class="col-1">
+
+						<br>
+
+					
+						<!---Identification Mark--->
+
+
+						<label for="imark"class="form-input" >Identification Mark:</label>
+						<input type="text" id="imark" name="Identification Mark" placeholder="Scars,Moles or any Identification Mark" required class="col-1">
+
+						<br>
+
+
+						<!---Program Enrolled--->
+
+
+						<label for="prog" class="form-input" >Program Enrolled:</label>
+						<select name="Program Enrolled" id="prog" required class="select-option">
+							<option value="Not Selected">Select an option</option>
+							<option value="M.Tech">M.Tech</option>
+							<option value="M.Sc">M.Sc</option>
+							<option value="MBA">MBA</option>
+							<option value="M.Pharm">M.Pharm</option>
+							<option value="B.Tech">B.Tech</option>
+							<option value="B.Sc">B.Sc</option>
+							<option value="BBA">BBA</option>
+							<option value="BCA">BCA</option>
+							<option value="Ph.D">Ph.D</option>
+							<option value="MCA">MCA</option>
+							<option value="PGD">PGD</option>
+							<option value="LLM">LLM</option>
+						</select>
+						
+						<br>
+
+
+						<!---Course--->
+
+
+						<label for="course" class="form-input">Course Name:</label>
+						<select name="Course Name" id="course" required class="select-option">
+							<option value="Not Selected">Select an option</option>
+							<option value="afgv">Animation, Film Making, Graphics & VFX</option>	
+							<option value="am">Applied Mathematics</option>
+							<option value="dm">Digital Marketing</option>
+							<option value="fsn">Food Science & Nutrition</option>
+							<option value="pt">Pharmaceutical Technology</option>	
+							<option value="iprt">Intellectual Property Rights and Technology</option>
+							<option value="ree">Renewable Energy Engineering</option>
+							<option value="tet">Textile Engineering and Technology</option>
+							<option value="ics">Internet TV,Content Management and Social Media Marketing</option>
+							<option value="fs">Forensic Science</option>
+							<option value="py">Psychology</option>
+							<option value="rp">Robotics and 3D Printing</option>
+							<option value="es">Environmental Science</option>
+							<option value="mcapp">Mathematics and Computer Applications</option>
+							<option value="itbig">IT Big Data Analytics</option>
+							<option value="mst">Material Science and Technology</option>
+							<option value="cet">Ceramic Engineering and Technology</option>
+							<option value="law">Law</option>
+							<option value="ba">Business Analytics</option>
+							<option value="biot">Biotechnology</option>
+							<option value="mnsav">Multimedia Science,Augumented and Virtual Reality</option>
+							<option value="mg">Management</option>
+							<option value="asa">Applied Statistics and Analytics</option>
+							<option value="mse">Material Science and Engineering</option>
+							<option value="cmi">Capital Market and Investment</option>
+							<option value="itai">IT Artificial Intelligence</option>
+							<option value="ap">Applied Psychology</option>
+							<option value="ha">Hospital Administration</option>
+							<option value="ai">Artificial Intelligence</option>
+							<option value="comapp">Computer Application</option>
+							<option value="bioin">Bioinformatics</option>
+							<option value="mbio">Molecular Biology</option>
+							<option value="mat">Mathematics</option>
+							<option value="stat">Statistics</option>
+							<option value="itcn">IT Cryptography and Network Security</option>
+							<option value="ft">Food Technology</option>
+							<option value="bioe">Biomedical Engineering</option>
+							<option value="ms">Materials Science</option>
+							<option value="cse">Computer Science and Engineering</option>
+							<option value="mvt">Microelectronics and VSLI Technology</option>
+							<option value="econ">Economics</option>
+							<option value="fost">Forensic Science and Technology</option>
+							<option value="itds">IT Data Science</option>
+							<option value="aiet">Artificial Intelligence Emerging Technology</option>
+							<option value="bdam">Business and Data Analytics Management</option>
+							<option value="itbt">IT Blockchain Technology</option>
+							<option value="ds">Data Science</option>
+							<option value="phar">Pharmalogy</option>
+							<option value="nstce">Nano Science and Technology Chemical Engineering</option>
+							<option value="hm">Hospital Management</option>
+							<option value="fst">Food Science and Technology</option>
+							<option value="ramt">Robotics and Additive Manufacturing Technology</option>
+							<option value="ap">Applied Physics</option>
+							<option value="ba">Business Analytics</option>
+							<option value="gmad">Gaming and Mobile Application Development</option>
+							<option value="itcs">IT Cyber Security</option>
+							<option value="meds">Media Science</option>
+							<option value="achem">Applied Chemistry</option>
+							<option value="is">Information Security</option>
+							<option value="res">Research</option>
+							<option value="gin">GeoInformatics</option>
+							<option value="esvt">Embedded Systems and VSLI Technology</option>
+							<option value="cive">Civil Engineering</option>
+							<option value="evm">Environment Management</option>
+							<option value="chem">Chemistry</option>
+							<option value="pharceu">Pharmaceutics</option>
+							<option value="ttm">Travel and Tourism Management</option>
+							<option value="cheme">Chemical Engineering</option>
+							<option value="se">Software Engineering</option>
+							<option value="hct">Health Care Technology</option>
+							<option value="hha">Hospital and Hotel Administration</option>
+							<option value="rrpe">Robotics and Robotics Process Engineering</option>
+							<option value="it">Information Technology</option>
+							<option value="be">brodcasting Engineering</option>
+							<option value="micbio">Microbiology</option>
+							<option value="mba">Management and Business Administration</option>
+							<option value="gen">Genetics</option>
+							<option value="let">Leather Engineering and Technology</option>
+							<option value="me">Mechanical Engineering</option>	
+							<option value="cs">Cyber Security</option>
+							<option value="bda">Business and Data Analytics</option>
+							<option value="aecon">Applied Economics</option>
+							<option value="phy">Physics</option>
+							<option value="itot">Internet of Things</option>
+							<option value="re">Renewable Energy</option>
+							<option value="ece">Electronics And Communication Engineering</option>
+							<option value="ee">Electrical Engineering</option>
+						</select>
+					
+						<br>
+
+
+						<!---Permanent Address--->
+
+
+						<label for="paddress" class="form-input">Permanent Address:</label>
+						<input type="text"  id="paddress" name="Permanent Address" placeholder="Enter Your Permanent Address" required class="col-1">
+
+
+						<br>
+
+
+						<!---Present Address--->
+
+
+						<label for="preaddress" class="form-input" >Present Address:</label>
+						<input type="text"  id="preaddress" name="Present Address" placeholder="Enter Your Present Address" required class="col-1">
+						
+
+						<br>
+
+						<!---Contact Number--->
+
+						<label for="conno" class="form-input">Contact Number:</label>
+						<input type="number" minlength="10" maxlength="10" id="conno" name="Contact number" placeholder="Without Country Code" required class="col-1">
+						
+						<br>
+
+						<!---Emergency Contact Number--->
+
+
+						<label for="econno" class="form-input" >Emergency Contact Number:</label>
+						<input type="number" minlength="10" maxlength="10" id="econno" name="Emergency Contact number" placeholder="Without Country Code" required class="col-1">
+						
+						<br>
+
+
+						<!---Course Start--->
+
+
+						<label for="dur"class="form-input" >Course Start:</label>
+						<input type="month" id="dur" name="course duration" required class="col-1">
+
+						<br>
+
+
+						<!---Course End--->
+
+
+						<label for="durend" class="form-input" >Course End:</label>
+						<input type="month" id="durend" name="course duration" required class="col-1">
+
+
+						<br>
+
+						<!---Upload Documents--->
+
+
+						<br>
+
+						<label for="photo" id="other" class="form-input">Upload your Stamp size photo (110px by 110px) *Background of the photo should be white. *File size maximum 1 MB.  *File type: jpg, jpeg</label>
+						<input type="file" id="image" name="photo" accept="image/*" required class="col-1">
+						
+						
+
+						<br>
+
+						<label for="regpdf" id="other" class="form-input" >Upload Scan copy of the registration card. *File type: PDF</label>
+						<input type="file" id="file" name="regcard" accept="PDF" required class="col-1">
+
+						
+
+						<br>
+
+						<label for="bpdf" id="other" class="form-input">Upload lab test report of Blood Group (Lab tested report, any government health card or Driving License will be accepted). *File type: PDF</label>
+						<input type="file" id="file" name="bltest" accept="PDF" required class="col-1">
+
+						
+
+						<br>
+
+						<label for="adpdf" id="other" class="form-input">Upload scan copy of Aadhar card. *File type: PDF</label>
+						<input type="file" id="file" name="adharcard" accept="PDF" required class="col-1">
+
+						<br>
+						<button type="submit" class="btn1" onclick="takevalue()">Generate</button>
+					</form>
+				</div>				
+			</div>
+			<script src="assets\js\script.js"></script>
+			<script src="assets/js/imageupload.js"></script>
+		</header>
+	</body>
+</html>
